@@ -7,8 +7,8 @@ delete a blog post (for logged in users only) ✅✅
 get all blog posts ✅
 get a single post ✅
 
-users should be able to save posts as draft
-users should be able to publish drafts
+users should be able to save posts as draft ✅
+users should be able to publish drafts ✅
 
 users should be able to add comments
 users should be able to delete comments
