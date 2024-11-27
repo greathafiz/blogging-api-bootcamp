@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const BlogSchema = new mongoose.Schema(
+const PostSchema = new mongoose.Schema(
   {
     title: { type: String, required: true },
     content: { type: String, required: true },
@@ -9,9 +9,9 @@ const BlogSchema = new mongoose.Schema(
       ref: "User",
       required: true,
     },
-    status: { type: String, enum: ["draft", "published"], default: "draft" },
+    status: { type: String, enum: ["draft", "published"] },
   },
   { timestamps: true }
 );
 
-export default mongoose.model("Blog", BlogSchema);
+export default mongoose.model("Post", PostSchema);
