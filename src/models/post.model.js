@@ -11,6 +11,10 @@ const PostSchema = new mongoose.Schema(
     },
     status: { type: String, enum: ["draft", "published"] },
   },
+comments: [{
+type: mongoose.Schema.Types.ObjectId,
+ref: 'Comment'
+}]
   { timestamps: true }
 );
 
